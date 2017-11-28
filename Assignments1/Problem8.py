@@ -1,3 +1,6 @@
+#8.Rewrite your Fibonacci exercise from earlier to use a function that
+#  takes an argument for how many numbers are required:
+
 def fib(num):
     list=[]
     num1=0
