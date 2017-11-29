@@ -1,4 +1,4 @@
+import re
 str="Twinkle, twinkle, little star!"
-regex=" "
-array=str.split(regex)
+array=re.split(' |, |!',str)
 print(array)
