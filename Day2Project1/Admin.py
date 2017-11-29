@@ -9,6 +9,7 @@ while(1):
         n=int(input("How many students you want to add?\n"))
         for count in range(n):
             student=Student()
+            flag=0
             student.setName(input("Enter student name\n"))
             student.setRollNumber(input("Enter student roll number\n"))
             studentT = studentScheduler.getStudent(student.getRollNumber())
@@ -19,9 +20,14 @@ while(1):
             for count1 in range(courses):
                 course=Course()
                 course.setCourseName(input("Enter course name\n"))
+                courseT = studentScheduler.getCourse(course.getCourseName())
+                if (courseT == None):
+                    print("Course name not found")
+                    flag=1
                 student.addCourse(course)
                 course=None
-            studentScheduler.addStudent(student)
+            if(flag==0):
+                studentScheduler.addStudent(student)
             student=None
     elif(choice=="2"):
         studentList=studentScheduler.showAllStudents()
@@ -43,7 +49,7 @@ while(1):
         faculty = studentScheduler.getFaculty(batch.getFacultyName())
         if (faculty == None):
             print("Faculty name not found")
-            break
+            continue
         batch.setNoOfStudents(input("Enter no of students\n"))
         for count in range(batch.getNoOfStudents()):
             student=studentScheduler.getStudent(input("Enter roll number\n"))

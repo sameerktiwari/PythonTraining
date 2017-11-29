@@ -21,7 +21,7 @@ class StudentScheduler:
         self.courses.append(course)
 
     def addFaculty(self,faculty):
-        self.courses.append(faculty)
+        self.faculties.append(faculty)
 
     def addBatch(self,batch):
         self.batches.append(batch)
