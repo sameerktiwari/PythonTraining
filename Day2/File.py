@@ -1,0 +1,5 @@
+file=open("d:\\sametiwa\python.txt",'a+')
+file.write("python training")
+file.seek(0)
+print(file.read())
+file.close()
