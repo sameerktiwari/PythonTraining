@@ -1,5 +1,3 @@
-from Student import Student
-from Course import Course
 class StudentScheduler:
     students=[]
     courses=[]

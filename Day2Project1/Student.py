@@ -1,5 +1,3 @@
-from Course import Course
-
 class Student:
     rollNumber=""
     name=""

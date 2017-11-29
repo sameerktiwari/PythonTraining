@@ -1,5 +1,3 @@
-from Course import Course
-
 class Batch:
     id = ""
     courseName = ""

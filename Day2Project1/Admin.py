@@ -1,4 +1,5 @@
-from StudentScheduler import StudentScheduler,Student
+from StudentScheduler import StudentScheduler
+from Student import Student
 from Course import Course
 from Batch import Batch
 from Faculty import Faculty
