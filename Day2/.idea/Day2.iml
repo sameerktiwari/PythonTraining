@@ -10,6 +10,7 @@
     <orderEntry type="module" module-name="Assignment2" />
     <orderEntry type="module" module-name="Problem13" />
     <orderEntry type="module" module-name="Assignment12" />
+    <orderEntry type="module" module-name="Problem15" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
