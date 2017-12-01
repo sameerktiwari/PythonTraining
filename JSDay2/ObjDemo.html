@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSDemo</title>
+</head>
+
+<body>
+<p id="p1"></p>
+    <script>
+        var person={
+            firstname: "Sameer",
+            lastname: "Tiwari",
+            role: "Senior Analyst",
+
+            getName: function() {
+            return this.firstname+' '+this.lastname;
+        }
+        };
+        var person2=person;
+        person2.firstname="Sammy"
+        document.getElementById("p1").innerHTML=person.getName();
+    </script>
+
+</body>
+</html>

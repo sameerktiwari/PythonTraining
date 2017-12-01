@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple Constructors</title>
+</head>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+
+<script>
+    var Person=function(firstname,lastname,role){
+        this.firstname=firstname;
+        this.lastname=lastname;
+        this.role=role;
+
+
+        this.getName=function() {
+            return this.firstname+' '+this.lastname;
+        }
+    };
+
+    var p2=new Person("Sammy");
+    var p3=new Person("Saptarshi","Saha");
+    var p4=new Person("Subrat","Behara","A4")
+
+    document.getElementById("p2").innerHTML=MultipleCons.getName();
+    document.getElementById("p3").innerHTML=p3.getName();
+    document.getElementById("p4").innerHTML=p4.getName();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Field Check</title>
+</head>
+<body>
+<p id="p1"></p>
+<script>
+    var person={
+        firstname: "Sameer",
+        lastname: "Tiwari",
+        role: "Senior Analyst",
+
+        getName: function() {
+            return this.firstname+' '+this.lastname;
+        }
+    };
+    if(person.hasOwnProperty("Company"))
+        document.getElementById("p1").innerHTML="Person has company field";
+    else
+        document.getElementById("p1").innerHTML="Person has no company field";
+</script>
+</body>
+</html>
