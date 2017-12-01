@@ -6,4 +6,4 @@ for i in range(10):
             continue
         if(j==3):
             break;
-    i=-1        
+    i=-1
