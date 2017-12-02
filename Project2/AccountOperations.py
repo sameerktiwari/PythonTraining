@@ -1,5 +1,5 @@
 from AccountException import AccountException
-
+from Transaction import Transaction
 class AccountOperations:
     accounts=[]
 
@@ -19,6 +19,11 @@ class AccountOperations:
         for ac in self.accounts:
             if(ac.accountNumber==accno):
                 ac.setBalance(ac.getBalance()+amount)
+                transaction=Transaction()
+                transaction.setAccountNumber(accno)
+                transaction.setBeneAcNo(accno)
+                transaction.setAmount(amount)
+                ac.addTransaction(transaction)
                 return ac
         return None
 
@@ -28,7 +33,12 @@ class AccountOperations:
                 if(ac.getBalance()<amount):
                     raise AccountException("Insufficient Balance")
                 else:
-                    ac.setBalance(ac.getBalance() + amount)
+                    ac.setBalance(ac.getBalance() - amount)
+                    transaction = Transaction()
+                    transaction.setAccountNumber(accno)
+                    transaction.setBeneAcNo(accno)
+                    transaction.setAmount(0-amount)
+                    ac.addTransaction(transaction)
                     return ac
         return None
 
@@ -39,6 +49,11 @@ class AccountOperations:
                     if(ac2.accountNumber == desacno):
                         self.depositAmount(desacno,amount)
                         self.withdrawAmount(srcacno,amount)
+                        transaction = Transaction()
+                        transaction.setAccountNumber(srcacno)
+                        transaction.setBeneAcNo(desacno)
+                        transaction.setAmount(amount)
+                        ac.addTransaction(transaction)
                         return ""
                 raise AccountException("Invalid receiver Account number")
             raise AccountException("Invalid receiver Account number")
