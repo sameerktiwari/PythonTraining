@@ -58,6 +58,10 @@ while(1):
         acc=accountOps.getAccount(acNo)
         print(acc)
     elif (choice == "6"):
+        acNo = int(input("Enter your Account number\n"))
+        acc = accountOps.getAccount(acNo)
+        print(acc.getTransactions())
+    elif (choice == "7"):
         break;
 
 

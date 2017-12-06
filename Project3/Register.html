@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script>
+        function validateData() {
+            var pass1 = document.getElementById("password").value;
+            var pass2 = document.getElementById("password2").value;
+            if (pass1 != pass2) {
+                alert("Passwords do not match");
+                return false;
+            }
+            var dob = new Date(document.getElementById("birthday").value);
+            var today = new Date();
+            if (dob.getFullYear() >= today.getFullYear() - 18) {
+                alert("You need to be 18 yrs or above to sign up");
+                return false;
+            }
+            return false;
+        }
+
+        function getCountryCode(){
+            var code=document.getElementById("countrycode").value;
+            document.getElementById("mno").value=code;
+            return false;
+        }
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Mail</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+    </div>
+</nav><div class="container">
+<form onsubmit="return validateData()">
+
+    <div class="form-group row">
+        <div class="col-xs-12">
+            <label for="name">Name</label>
+        </div>
+        <div id="name">
+            <div class="col-xs-4">
+                <input type="text" id="firstname" pattern="[A-Za-z ]{2,}" required class="form-control" placeholder="firstname" title="Enter only alphabets">
+            </div>
+            <div class="col-xs-4">
+            <input type="text" id="lastname" pattern="[A-Za-z ]{2,}" required class="form-control" placeholder="lastname" title="Enter only alphabets">
+            </div>
+        </div>
+
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-4">
+        <label for="username">Choose your Username</label>
+        <input type="text" id="username" required class="form-control" pattern="[A-Za-z0-9@#$.]{6,}" title="Enter minimum of 6 characters"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-4">
+            <label for="password">Create a Password</label>
+            <input id="password" required type="password" class="form-control" minlength="6"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-4">
+            <label for="password2">Confirm your Password</label>
+            <input id="password2" required type="password" class="form-control" minlength="6"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-4">
+        <label for="birthday">Birthday</label>
+        <input id="birthday" required type="date" class="form-control"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-4">
+            <label for="gender">Gender</label>
+            <select id="gender" required class="form-control">
+                <option value="">I am...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-4">
+        <label for="mobile">Mobile</label>
+        <div id="mobile">
+        <select id="countrycode" required class="form-control" onchange="return getCountryCode()">
+            <option value="+91">India +91</option>
+            <option value="+92">Pakistan +92</option>
+        </select>
+            <input id="mno" required type="text" pattern="^(\+\d{1,3}[- ]?)?\d{10}$" class="form-control" value="+91"/>
+        </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-4">
+        <label for="email">Your current email address</label>
+        <input id="email" required type="email" class="form-control"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-xs-4">
+        <label for="loc">Country</label>
+        <select id="loc" required class="form-control">
+            <option value="india">India</option>
+            <option value="pakistan">Pakistan</option>
+        </select>
+    </div>
+    </div>
+    <input class="btn btn-default" type="submit"
+                                   value="Register" />
+</form>
+</div>
+</body>
+</html>
