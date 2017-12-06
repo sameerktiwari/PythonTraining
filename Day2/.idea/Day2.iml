@@ -16,6 +16,15 @@
     <orderEntry type="module" module-name="Problem9" />
     <orderEntry type="module" module-name="Problem17" />
     <orderEntry type="module" module-name="Project2" />
+    <orderEntry type="module" module-name="mysite" />
+    <orderEntry type="module" module-name="FormExample" />
+    <orderEntry type="module" module-name="add" />
+    <orderEntry type="module" module-name="SQLDemo" />
+    <orderEntry type="module" module-name="SQLAlchemy" />
+    <orderEntry type="module" module-name="P1" />
+    <orderEntry type="module" module-name="P2" />
+    <orderEntry type="module" module-name="AlchemyProject" />
+    <orderEntry type="module" module-name="AlchemyProject" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

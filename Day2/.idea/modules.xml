@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/AlchemyProject/.idea/AlchemyProject.iml" filepath="$USER_HOME$/AlchemyProject/.idea/AlchemyProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Assignment12/.idea/Assignment12.iml" filepath="$PROJECT_DIR$/../Assignment12/.idea/Assignment12.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Assignment2/.idea/Assignment2.iml" filepath="$PROJECT_DIR$/../Assignment2/.idea/Assignment2.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Assignments1/.idea/Assignments1.iml" filepath="$PROJECT_DIR$/../Assignments1/.idea/Assignments1.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Basics/.idea/Basics.iml" filepath="$PROJECT_DIR$/../Basics/.idea/Basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Day2.iml" filepath="$PROJECT_DIR$/.idea/Day2.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Day2Project1/.idea/Day2Project1.iml" filepath="$PROJECT_DIR$/../Day2Project1/.idea/Day2Project1.iml" />
+      <module fileurl="file://$USER_HOME$/FormExample/.idea/FormExample.iml" filepath="$USER_HOME$/FormExample/.idea/FormExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../P1/.idea/P1.iml" filepath="$PROJECT_DIR$/../P1/.idea/P1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../P2/.idea/P2.iml" filepath="$PROJECT_DIR$/../P2/.idea/P2.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Problem12/.idea/Problem12.iml" filepath="$PROJECT_DIR$/../Problem12/.idea/Problem12.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Problem13/.idea/Problem13.iml" filepath="$PROJECT_DIR$/../Problem13/.idea/Problem13.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Problem15/.idea/Problem15.iml" filepath="$PROJECT_DIR$/../Problem15/.idea/Problem15.iml" />
@@ -15,6 +19,10 @@
       <module fileurl="file://$PROJECT_DIR$/../Problem17/.idea/Problem17.iml" filepath="$PROJECT_DIR$/../Problem17/.idea/Problem17.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Problem9/.idea/Problem9.iml" filepath="$PROJECT_DIR$/../Problem9/.idea/Problem9.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Project2/.idea/Project2.iml" filepath="$PROJECT_DIR$/../Project2/.idea/Project2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SQLAlchemy/.idea/SQLAlchemy.iml" filepath="$PROJECT_DIR$/../SQLAlchemy/.idea/SQLAlchemy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SQLDemo/.idea/SQLDemo.iml" filepath="$PROJECT_DIR$/../SQLDemo/.idea/SQLDemo.iml" />
+      <module fileurl="file://$USER_HOME$/add/.idea/add.iml" filepath="$USER_HOME$/add/.idea/add.iml" />
+      <module fileurl="file://$USER_HOME$/mysite/.idea/mysite.iml" filepath="$USER_HOME$/mysite/.idea/mysite.iml" />
     </modules>
   </component>
 </project>
